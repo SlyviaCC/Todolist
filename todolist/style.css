@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+i {
+  pointer-events: none;
+}
+
+body {
+  background: linear-gradient(to right, rgba(71, 253, 217, 0.534), rgba(60, 60, 244, 0.549), rgba(164, 52, 244, 0.515), violet);
+}
+
+header {
+  height: 20vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+header h1 {
+  font-size: 3rem;
+  color: white;
+}
+
+form {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+button,
+input {
+  border: none;
+  padding: 0.25rem 0.5rem;
+  margin: 0.2rem;
+  font-size: 1.25rem;
+}
+
+input[type=number] {
+  width: 3.95rem;
+}
+
+button {
+  cursor: pointer;
+  background-color: rgba(113, 242, 235, 0.356);
+  color: white;
+  font-weight: bold;
+  border-radius: 5%;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+section div.todo {
+  width: 30vw;
+  display: flex;
+  justify-content: center;
+  margin: 0.2rem 0;
+  transition: all 0.1s ease;
+}
+section div.todo button {
+  padding: 0.25rem 0.5rem;
+  font-size: 1.75rem;
+  border: none;
+  cursor: pointer;
+  color: white;
+}
+section div.todo button.trash {
+  background-color: red;
+}
+section div.todo button.complete {
+  background-color: green;
+}
+section div.todo p {
+  width: 80%;
+  color: white;
+  font-size: 1.5rem;
+  display: flex;
+  padding: 0.25rem 0.5rem;
+  text-align: center;
+}
+section div.todo p.text {
+  width: 50%;
+}
+section div.todo p.time {
+  width: 20%;
+}
+
+.done {
+  opacity: 0.5;
+  text-decoration: line-through;
+  text-decoration-thickness: 0.2rem;
+}
+
+div.sort {
+  display: flex;
+  justify-content: center;
+  margin: 1rem;
+}
+@-webkit-keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@keyframes scaleUp {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes scaleDown {
+  to {
+    transform: scale(0);
+  }
+}
+@keyframes scaleDown {
+  to {
+    transform: scale(0);
+  }
+}/*# sourceMappingURL=style.css.map */
